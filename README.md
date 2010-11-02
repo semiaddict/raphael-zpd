@@ -12,7 +12,7 @@ Repeated calls to this function may be used to alter the settings as needed. You
 
 ## Potential Issues
 
-The ZPD function works by creating an SVG group element (with id 'viewport') and altering the paper's canvas to point it, causing all following elements created by Raphaël to be placed within. This will potentially break any plugins or Raphaël functions that rely on paper.canvas pointing to the root SVG object, though I have yet to encounter such a situation.
+The ZPD function works by creating an SVG group element (with id 'viewport') and altering the paper's canvas to point at it, causing all following elements created via the paper to be placed within. This will potentially break any plugins or Raphaël functions that rely on paper.canvas pointing to the root SVG object, though I have yet to encounter such a situation.
 
 ## Acknowledgements
 
@@ -21,7 +21,6 @@ Based on the [SVGPan](http://code.google.com/p/svgpan/) library created by Andre
 ## License
 
 	Copyright 2010 Daniel Assange <somnidea@lemma.org> (Raphaël integration and extensions). All rights reserved.
-	
 	Copyright 2009-2010 Andrea Leofreddi <a.leofreddi@itcharm.com> (original author). All rights reserved.
 	
 	Redistribution and use in source and binary forms, with or without modification, are
