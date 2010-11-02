@@ -55,17 +55,10 @@
 		 * Handler registration
 		 */
 		function setupHandlers(root){
-			//root.onmouseup = add;
 			root.onmousedown = handleMouseDown;
 			root.onmousemove = handleMouseMove;
 			root.onmouseup = handleMouseUp;
-			/*setAttributes(root, {
-				"onmouseup" : "add(evt)",
-				"onmousedown" : "handleMouseDown(evt)",
-				"onmousemove" : "handleMouseMove(evt)",
-				"onmouseup" : "handleMouseUp(evt)",
-				//"onmouseout" : "handleMouseUp(evt)", // Decomment this to stop the pan functionality when dragging out of the SVG element
-			});*/
+			//root.onmouseout = handleMouseUp; // Decomment this to stop the pan functionality when dragging out of the SVG element
 
 			if(navigator.userAgent.toLowerCase().indexOf('webkit') >= 0)
 				window.addEventListener('mousewheel', handleMouseWheel, false); // Chrome/Safari
