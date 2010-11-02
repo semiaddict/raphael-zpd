@@ -35,7 +35,7 @@
 (function() {
 	var initialized = false;
 
-	var opts = { zoom: false, pan: false, drag: false }
+	var opts = { zoom: true, pan: true, drag: true }
 
 	function init(paper) {
 		var root = paper.canvas;
