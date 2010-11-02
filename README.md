@@ -1,7 +1,8 @@
 # Raphaël-ZPD
-### A little plugin for the Raphaël Javascript SVG library enabling canvas-wide zoom, pan and drag functionality.
+### A little plugin for the [Raphaël](http://raphaeljs.com/) Javascript SVG library enabling canvas-wide zoom, pan and drag functionality.
 
 ## Usage
+
 Create a Raphaël paper object, then call the ZPD initialization function with the systems to enable (before performing any drawing operations):
 
 	paper.ZPD({ zoom: true, pan: true, drag: true });
@@ -13,6 +14,10 @@ Repeated calls to this function may be used to alter the settings as needed. You
 ## Potential Issues
 
 The ZPD function works by creating an SVG group element (with id 'viewport') and altering the paper's canvas to point at it, causing all following elements created via the paper to be placed within. This will potentially break any plugins or Raphaël functions that rely on paper.canvas pointing to the root SVG object, though I have yet to encounter such a situation.
+
+## Examples
+
+[Treeblob](http://www.lemma.org/experiments/treeblob/) is a contrived example of network visualisation using the panning and zooming functionalities.
 
 ## Acknowledgements
 
