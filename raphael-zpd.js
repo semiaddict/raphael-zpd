@@ -1,4 +1,4 @@
-/**
+**
  *  Raphaël-ZPD: A zoom/pan/drag plugin for Raphaël.
  * ==================================================
  *
@@ -237,8 +237,6 @@
 				}
 			}
 		}
-
-		console.log(opts);
 
 		if (!initialized) init(this);
 		return this;
