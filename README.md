@@ -4,11 +4,11 @@
 ## Usage
 Create a Raphaël paper object, then call the ZPD initialization function with the systems to enable (before performing any drawing operations):
 
-$ paper.ZPD({ zoom: true, pan: true, drag: true });
+	$ paper.ZPD({ zoom: true, pan: true, drag: true });
 
 Repeated calls to this function may be used to alter the settings as needed. You may disable the drag functionality on the basis of individual Raphaël elements like so:
 
-$ el.node.draggable = false;
+	$ el.node.draggable = false;
 
 ## Potential Issues
 
