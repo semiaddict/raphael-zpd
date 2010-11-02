@@ -21,6 +21,7 @@ Based on the [SVGPan](http://code.google.com/p/svgpan/) library created by Andre
 ## License
 
 Copyright 2010 Daniel Assange <somnidea@lemma.org> (Raphaël integration and extensions). All rights reserved.
+
 Copyright 2009-2010 Andrea Leofreddi <a.leofreddi@itcharm.com> (original author). All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are
