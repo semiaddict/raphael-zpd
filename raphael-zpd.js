@@ -188,7 +188,7 @@
 
 			var g = svgDoc.getElementById("viewport");
 
-			if(evt.target.tagName == "svg") {
+			if(evt.target.tagName == "svg" || !opts.drag) {
 				// Pan mode
 				if (!opts.pan) return;
 
